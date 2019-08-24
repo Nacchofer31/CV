@@ -2,9 +2,8 @@
 %     CS
 %%%%%%%%%%%%%%%%%
 
-\documentclass[11pt,sans]{moderncv}
+\documentclass[11pt,a4paper]{moderncv}
 
-    \addtolength{\voffset}{-2 cm}
 
 %% ModernCV themes
 \moderncvstyle{classic}
@@ -17,7 +16,6 @@
 \usepackage[utf8]{inputenc}
 
 \usepackage{tikz}
-\usepackage[thinlines]{easytable}
 \newcommand{\github}{%
 \begin{tikzpicture}[y=0.2pt, x=0.2pt,yscale=-1, inner sep=0pt, outer sep=0pt,opacity=0.4]
   \begin{scope}[shift={(506.69823,386.92617)}]
@@ -122,7 +120,7 @@
 }
 
 %% Adjust the page margins
-\usepackage[scale=0.79]{geometry}
+\usepackage[scale=0.84]{geometry}
 \usepackage{color,soul} \setul{1ex}{0.8ex} \definecolor{orange}{rgb}{73,,0}
 \usepackage{booktabs}
 \setulcolor{orange}
@@ -151,13 +149,14 @@
     \item IT student interested in innovative software solutions with great passion for writing clean and open code.
     \end{itemize}
 }
-\section{Employment} % =====================================
+\section{Work Experience} % =====================================
 
 \cvitem{Feb 2016}{ \textbf{Junior Android Developer}, \textit{Sportmaniacs, Valencia, Spain.}}
 \cvitem{to Sep 2016}{
     \begin{itemize}%
-    \item Part of a team that was tasked with developing TSportable, an Android mobile application to time races in places that are hard to get to whether there is coverage or not.
-    \item Assisted in developing SportManiacs app, an Android mobile application to sign up races, genate tickets, browse race results, generate certificates...
+    \item Part of a team that was tasked with developing an Android mobile application to time races in places that are hard to get to whether there is coverage or not, using a RFID reader connected to the mobile via Bluetooth.
+    \item Assisted in developing an Android mobile application to sign up races, genate tickets, browse race results and generate certificates.
+    \item Created UI tests with Expresso and Mockito runned in a Jenkins server.
     \item Worked with Model View Presenter, Retrofit, UnitTesting, ButterKnife, RxJava...
     \end{itemize}
 }
@@ -166,24 +165,27 @@
 
 \cvitem{2016}{ \textbf{Bachelor's Degree in Informatics Engineering} }
 \cvitem{to PRESENT}{
-\textit{Universidad Politécnica de Valencia (UPV), Spain }
+\textit{Universidad Politécnica de Valencia (UPV), Valencia, Spain }
 }
 \medskip
-\cvitem{2014 to 2016}{ \textbf{Higher Technician in Multi-platform Applications Development}, \textit{Florida Universitaria }, Catarroja, Spain}
+\cvitem{2014 to 2016}{ \textbf{Higher Technician in Multi-platform Applications Development}, \textit{Florida Universitaria}, Catarroja, Spain}
 
 \cvitem{2015}{ \textbf{Introduction to Swift and iOS applications development with XCode}, \textit{Geekhubs}
 }
 
-\medskip
+\bigskip
 
 \section{Technical Background} % =====================================
 \cvitem{ }{
 \begin{itemize}
-    \item \textbf{Programming Languages}: Java, Javascript, Kotlin, SQL, C\#, Swift, RESTful, JSON, XML and HTML.
-    \item \textbf{Tools and Technologies}: Android SDK \& NDK, Andoid Studio, Docker, iOS SDK, Unit Testing, XCode, Visual Studio, Eclipse and Vim.
-    \item \textbf{Operating Systems}: Windows, Arch Linux, Ubuntu, Debian, MAC OSX, iOS and Android.
-    \item \textbf{VCS}: Java, Javascript, Kotlin, SQL, C\#, Swift
-    \item \textbf{Methodologies}: Test Driven Development, Agile, SCRUM.
+    \item \textbf{Programming Languages}: Java, Javascript, Kotlin, SQL, C\#, Swift, RESTful, JSON, XML, markup languages including HTML, R Markdown and \LaTeX.
+    \item \textbf{Tools and Technologies}: Android SDK \& NDK, Andoid Studio, Docker, Unit Testing, XCode, Visual Studio, Eclipse and Vim.
+    \item \textbf{Operating Systems}: Windows, Arch Linux, MacOSX and Android.
+    \item \textbf{VCS}: Git.
+    \item \textbf{Methodologies}: Test Driven Development and SCRUM.
+    \item \textbf{Operating Systems}: Windows, Arch Linux, iOS and Android.
+    \item \textbf{CI}: Jenkins.
+    \item \textbf{Languages}: Spanish (\textit{Native}), English (\textit{Upper Intermediate}).
 \end{itemize}
 }
 

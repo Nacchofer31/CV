@@ -1,13 +1,22 @@
 %%%%%%%%%%%%%%%%%%
 %     CS
 %%%%%%%%%%%%%%%%%
+\RequirePackage{filecontents}
+\begin{filecontents*}{moderncvcolorblack.sty}
+
+\definecolor{color0}{rgb}{0.2,0.2,0.345}% dark-blue
+%\definecolor{color1}{rgb}{0.2,0.2,0.2}% Testcolor
+\definecolor{color1}{rgb}{0.2,0.2,0.345}% dark-blue
+\endinput
+%% end of file `moderncvcolorburgundy.sty'.
+\end{filecontents*}
 
 \documentclass[11pt,a4paper]{moderncv}
 
 
 %% ModernCV themes
 \moderncvstyle{classic}
-\moderncvcolor{blue}
+\moderncvcolor{black}
 \renewcommand{\familydefault}{\sfdefault}
 \nopagenumbers{}
 
@@ -125,18 +134,18 @@
 \usepackage{booktabs}
 \setulcolor{orange}
 
-
 %% Personal data
 \firstname{Ignacio}
-\familyname{Ferrer}
-\address{C/Maestro Serrano-4-1-1}{Benetússer - Valencia - Spain}
+\familyname{Ferrer Sanz}
 \mobile{+34~608~83~44~25}
 \email{ignaciofer31@gmail.com}
+\homepage{linkedin.com/in/ignacio-ferrer-sanz}
 \extrainfo{\github{
 \href{https://github.com/Nacchofer31}{github.com/Nacchofer31}
-}}
+}
+}
 \photo[64pt][0.4pt]{cvphoto.jpg}
-\title{Software Developer}
+\title{Mobile \& Front-end Developer}
 %%------------------------------------------------------------------------------
 %% Content
 %%------------------------------------------------------------------------------
@@ -151,13 +160,18 @@
 }
 \section{Work Experience} % =====================================
 
-\cvitem{Feb 2016}{ \textbf{Junior Android Developer}, \textit{Sportmaniacs, Valencia, Spain.}}
+\cvitem{May 2020}{ \textbf{Mobile Developer at DEVELAPPS}, \textit{Valencia, Spain.}}
+\cvitem{to PRESENT}{
+    \begin{itemize}%
+    \item Developing native Android apps with Kotlin, Model-View-ViewModel, Jetpack, Retrofit, Rum...
+    \item Creating cross-platform apps with Flutter, BLoC pattern, Dio, RxDart, Provider...
+    \end{itemize}
+}
+\cvitem{Feb 2016}{ \textbf{Junior Android Developer at Sportmaniacs}, \textit{Valencia, Spain.}}
 \cvitem{to Sep 2016}{
     \begin{itemize}%
-    \item Part of a team that was tasked with developing an Android mobile application to time races in places that are hard to get to whether there is coverage or not, using a RFID reader connected via Bluetooth.
-    \item Assisted in developing an Android mobile application to sign up races, browse race results and generate tickets or certificates.
-    \item Created UI tests with Expresso and Mockito runned in a Jenkins server.
     \item Worked with Model View Presenter, Retrofit, UnitTesting, ButterKnife, RxJava...
+    \item Created UI tests with Expresso and Mockito runned in a Jenkins server.
     \end{itemize}
 }
 
@@ -180,7 +194,7 @@
 \section{Skills} % =====================================
 \cvitem{ }{
 \begin{itemize}
-    \item \textbf{Programming Languages}: Java, Javascript, NodeJS, Kotlin, SQL, C\#, Swift, RESTful, JSON, XML, markup languages including HTML, R Markdown and \LaTeX.
+    \item \textbf{Programming Languages}: Kotlin, Java, Javascript, NodeJS, SQL, C\#, Swift, RESTful, JSON, XML, markup languages including HTML, R Markdown and \LaTeX.
     \item \textbf{Tools and Technologies}: Android SDK \& NDK, Andoid Studio, Docker, Flutter, Cordova, Unit Testing, XCode, Visual Studio, Eclipse and Vim.
     \item \textbf{VCS}: Git.
     \item \textbf{Methodologies}: Test Driven Development and SCRUM.
@@ -189,23 +203,5 @@
     \item \textbf{Languages}: Spanish (\textit{Native}), English (\textit{Upper Intermediate - B2}), Catalan (\textit{Proficient}).
 \end{itemize}
 }
-
-% \section{Leadership roles} % =====================================
-% \cvitem{2012--2013}{ \textbf{Founder and chair}, of \textit{University of Manchester Slackline Society.}}
-% \cvitem{}{
-% Developed management skills by organizing events and managing studies in parallel.
-% }
-
-% \cvitem{2012--2013}{ \textbf{Committee member}, of \textit{University of Manchester Ultimate Programming Society.}}
-% \cvitem{}{
-% Gave a talk on google apps script and google app engine to a room of 50 persons.
-% }
-
-
-% \section{Interests} % =====================================
-% \cvitem{Slacklining}{
-% At ground level, I use the slackline as a thin trampoline and have since been sponsored and competed at national level. }
-% \cvitem{Cycling}{
-% I enjoy the challenge of bicycle touring and have travelled thousands of miles through Europe by bicycle. }
 
 \end{document}

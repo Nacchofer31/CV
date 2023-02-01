@@ -1,0 +1,104 @@
+\documentclass{cv}
+
+\setname{Ignacio}{Ferrer Sanz - Senior Mobile Engineer}
+\setaddress{Valencia/Spain}
+\setmobile{608 83 44 25}
+\setmail{ignaciofer31@gmail.com}
+\setposition{Senior Mobile Engineer}
+\setlinkedinaccount{https://www.linkedin.com/in/ignacio-ferrer-sanz/}
+\setgithubaccount{https://github.com/Nacchofer31}
+\setthemecolor{MidnightBlue}
+
+\begin{document}
+\headerview
+\vspace{1ex}
+
+%Sections
+%
+% Summary
+\addblocktext{Profile}{%
+\begin{itemize}%
+    \item Accomplished Software Engineer well-versed in creating native and hybrid applications for Android, iOS and web platforms with good knowledge of various programming languages and frameworks. 
+    \item DevOps student interested to perform various DevOps practises, such as automating, supporting and ensuring CI/CD in product developing.
+    \end{itemize}
+}
+
+% Experience
+\section{Experience}
+    %
+    \datedexperience{Sopra Steria}{May 2022-Present / Valencia}
+    \explanation{Senior Android Engineer}
+    \explanationdetail{\coloredbullet\ %
+     Being part of a large multicultural team, in charge of re-skinning a modularized banking app.
+     }
+     \explanationdetail{\coloredbullet\ %
+     Using a low-code proprietary remote app config making the app fully customizable directly from a back-office.
+     }
+     \explanationdetail{\coloredbullet\ %
+     Android (kotlin) $\sim$ Working with: \textit{MVVM, Jetpack, Koin, Koin-test, Retrofit2, AndroidX, LiveData, Firebase, Mockito, Glide}
+     }
+    %
+    \datedexperience{Cuatroochenta}{May 2020-Apr 2020 / Valencia, Spain} 
+    \explanation{Mobile Engineer}
+    \explanationdetail{\coloredbullet\ %
+     Flutter $\sim$ Worked with: \textit{Clean Architecture, BLoC, GetIt, Dartz, RxDart, Equatable, TDD, Mockito}
+     }
+     \explanationdetail{\coloredbullet\ %
+     Android (kotlin) $\sim$ Worked with: \textit{Jetpack, MVVM, Coroutines, Streams, AndroidX, Retrofit, Room}
+     }
+    %
+    \datedexperience{Sportmaniacs}{Jan 2016-Sep 2016 / Valencia, Spain} 
+    \explanation{Android Engineer} 
+    \explanationdetail{\coloredbullet\ %
+     Android (java) $\sim$ Worked with: \textit{Model View Presenter, ButterKnife, Retrofit, RxJava, Mockito, Expresso, UnitTesting}
+     }
+    %
+
+%Education
+\section{Education} 
+    \datedexperience{La Universidad en Internet (UNIR)}{2020-2021 / La Rioja, Spain (Remote)} 
+    \explanation{Master's degree in DevOps (Remote)} 
+    %
+    \datedexperience{Universidad Politécnica de Valencia (UPV)}{2016-2020 / Valencia, Spain} 
+    \explanation{Bachelor's Degree in Informatics Engineering}
+    %
+    \datedexperience{University of Applied Sciences (OAMK)}{2020 / Oulu, Finland} 
+    \explanation{Web Development | Mobile Applications - Erasmus+ program}
+    %
+    \datedexperience{Florida Universitaria}{2014-2016 / Catarroja, Valencia, Spain} 
+    \explanation{Higher Technician in Multi-platform Applications Development}
+%
+
+%
+% Skills
+\section{Skills}
+    %
+    \newcommand{\skillone}{\createskill{Programming Languages}{\textbf{\emph{Experienced:}} \ \  Kotlin \cpshalf Dart (Flutter) \cpshalf Java \ \ \textbf{\emph{Familiar:}} \ \  JS \cpshalf C\# \cpshalf Bash \cpshalf \LaTeX \cpshalf Swift}}
+    %
+    \newcommand{\skilltwo}{\createskill{Software Development}{Design Patterns \cpshalf GIT \cpshalf CLI \cpshalf Agile Methodology \cpshalf DevOps Lifecycles}}
+    %
+    \newcommand{\skillthree}{\createskill{Android Programming}{MVVM \cpshalf Jetpack \cpshalf LiveData  \cpshalf Koin \cpshalf RxJava \cpshalf Room \cpshalf Retrofit2  \cpshalf Koin-test \cpshalf Mockito}}
+    %
+    \newcommand{\skillfour}{\createskill{Flutter Programming}{Clean Architecture \cpshalf BLoC \cpshalf GetIt \cpshalf RxDart \cpshalf Provider \cpshalf Dartz \cpshalf Mockito}}
+    %
+    \newcommand{\skillfive}{\createskill{DevOps Tools}{Ansible \cpshalf Docker \cpshalf Kubernetes \cpshalf Chef \cpshalf Puppet \cpshalf Terraform \cpshalf Jenkins \cpshalf GitLab CI/CD}}
+    %
+    \newcommand{\skillsix}{\createskill{Languages}{\textbf{\emph{Native:}} \ \  Spanish \cpshalf Catalan \ \ \textbf{\emph{Fluent:}} \ \ English }}
+    %
+    \createskills{\skillone, \skilltwo, \skillthree, \skillfour, \skillfive, \skillsix}
+%
+% Experience
+\section{Projects}
+    \newcommand{\extraone}{%
+        \href{https://riunet.upv.es/handle/10251/172217}{Bachelor's Degree in Informatics Engineering thesis} - Universidad Politécnica de Valencia (SPAIN)
+    }
+    %
+    \newcommand{\extratwo}{%
+        \href{https://riunet.upv.es/handle/10251/172217}{My GitHub projects} - user: Nacchofer31
+    }
+    %
+    \newcommand{\listofextras}{\extraone, \extratwo}
+    %
+    \createbullets{\listofextras}
+
+\end{document}

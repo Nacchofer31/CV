@@ -4,7 +4,7 @@
 % Might be interpreted as an easier-to-edit or easier-to-understand-what-is-going-on version of it.
 \author{Murat Can Karacabey}
 \RequirePackage[dvipsnames]{xcolor} % moved here I guess article class causes option clash with xcolor if used after loading the class
-\LoadClass[11pt]{article}
+\LoadClass[10pt]{article}
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{muratcan_cv}[2020/04/15 Muratcan CV Class]
 \RequirePackage[sfdefault]{noto}
@@ -26,7 +26,6 @@
 
 \newcommand*{\setname}[2]{\def\@firstname{#1}\def\@lastname{#2}}
 \newcommand*{\setaddress}[1]{\def\@address{#1}}
-\newcommand*{\setmobile}[1]{\def\@mobile{#1}}
 \newcommand*{\setposition}[1]{\def\@position{#1}}
 \newcommand*{\setmail}[1]{\def\@mail{#1}}
 \newcommand*{\setthemecolor}[1]{\def\@themecolor{#1}}
@@ -50,13 +49,13 @@
 
 % can makebox also be used?
 \newcommand\headerview{
-\begin{minipage}{0.25\linewidth}
-    \profpic{0.22}{images/profilpicture}
+\begin{minipage}{0.15\linewidth}
+    \profpic{0.16}{images/profilpicture}
 \end{minipage}% 
 \hfill
-\begin{minipage}{0.45\linewidth}
+\begin{minipage}{0.55\linewidth}
     \center \name \\[0.05cm] 
-    \contact % address \ mobile \\ mail
+    \contact % address \\ mail
 \end{minipage}
 }
 
@@ -84,7 +83,9 @@
 }
 
 \newcommand{\contact}{%
-        {\small \@address  \cps \@mobile \\ \@mail%
+        {\small \@address
+        \\
+        \@mail%
         \\%
         \linkedinview \cps \githubview \\ 
         } % 
